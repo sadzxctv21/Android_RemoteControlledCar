@@ -1,6 +1,8 @@
 package com.example.sssss.replacemouse;
 
 import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
@@ -178,5 +180,15 @@ public class Tool {
 			e.printStackTrace();
 		}
 	}
-
+	public static boolean haveInternet(Context mContext) {
+		boolean result = false;
+		ConnectivityManager connManager = (ConnectivityManager)mContext.getSystemService(mContext.CONNECTIVITY_SERVICE);
+		NetworkInfo info = connManager.getActiveNetworkInfo();
+		if (info == null || !info.isConnected()) {
+			result = false;
+		} else {
+			result = info.isAvailable();
+		}
+		return result;
+	}//是否連線
 }

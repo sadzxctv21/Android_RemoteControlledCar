@@ -1,15 +1,15 @@
-package com.example.sssss.replacemouse;
+package com.example.sssss.replacemouse.old;
 
 import android.content.pm.ActivityInfo;
-import android.media.AudioManager;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
-import android.view.View;
 import android.widget.Toast;
+
+import com.example.sssss.replacemouse.R;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -24,7 +24,7 @@ public class ReplaceMouse extends AppCompatActivity {
         super.setTheme(android.R.style.Theme_Light_NoTitleBar_Fullscreen);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_USER_LANDSCAPE);//固定橫向
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.replace_mouse);
+        setContentView(R.layout.replace_mouse_old);
         ConstraintLayout C01=(ConstraintLayout)findViewById(R.id.C01);
      //   new time().start();
     }
