@@ -1,22 +1,17 @@
-package com.example.sssss.replacemouse;
+package com.example.sssss.replacemouse.old;
 
-import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.SeekBar;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.sssss.replacemouse.R;
 
 public class TrackControl extends AppCompatActivity {
     int WidthO = 4958;
